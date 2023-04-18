@@ -1,0 +1,63 @@
+@import "../../../assets/styles/variables";
+
+.card {
+  width: 245px;
+  filter: $shadow-card;
+
+  &__img {
+    position: relative;
+    width: 77px;
+    height: 77px;
+    margin-bottom: -30px;
+    margin-left: 10px;
+    
+    & span:nth-child(1) { 
+      border-radius: 50%;
+    }
+  }
+
+  &__info {
+    height: 165px;
+    overflow: hidden;
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    padding: 33px 10px 10px;
+    background: #ffff;
+  }
+
+  &__label {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: $main-black;
+    padding-bottom: 3px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+  }
+
+  &__descr {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $gray-text;
+    padding-bottom: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__price {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: $main-black;
+  }
+}

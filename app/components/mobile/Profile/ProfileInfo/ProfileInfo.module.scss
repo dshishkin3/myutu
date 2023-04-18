@@ -1,0 +1,67 @@
+.container {
+  padding: 16px;
+  background-color: white;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.leftBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.rightBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.tile {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.icon {
+  background-color: #2ac6fa;
+  width: 22px;
+  height: 22px;
+}
+
+.image {
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.counter {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.title {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 11px;
+}
+
+.imgWrapper {
+  position: relative;
+  width: 55px;
+  height: 55px;
+}
+
+.changeAvatarIconWrapper {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  bottom: 0px;
+  right: 0px;
+}

@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    flex-direction: column;
+    padding: 16px;
+
+    width: 100%;
+    img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.header {
+    display: flex;
+    gap: 6px;
+    &__text {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 12px;
+    }
+}
+
+.description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    margin-bottom: 6px;
+}
+
+.link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #2ac6fa;
+}

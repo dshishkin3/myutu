@@ -1,0 +1,46 @@
+@import "app/assets/styles/variables";
+
+.auth__btn {
+  height: 100%;
+  border: none;
+  border-radius: 5px;
+
+  padding: 0px 10px;
+  cursor: pointer;
+
+  & span {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #2ac6fa;
+  }
+}
+
+.auth__profile {
+  position: relative;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-left: 2px solid #2ac6fa40;
+  padding-left: 16px;
+
+  & span {
+    border-radius: 50%;
+  }
+
+  & img {
+    object-fit: cover;
+  }
+
+  span:nth-child(2) {
+    display: block;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}

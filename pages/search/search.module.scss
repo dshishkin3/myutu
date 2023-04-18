@@ -1,0 +1,109 @@
+@import "app/assets/styles/_variables.scss";
+.search {
+
+    &__type {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 14px;
+        cursor: pointer;
+
+        
+        span {
+            display: block;
+            font-family: "Inter";
+            font-weight: 400;
+            font-size: 16px;
+            color: #333232;
+        }
+    }
+
+
+    &__container {
+      display: grid;
+      grid-template-columns: 358px 1fr;
+      gap: 30px;
+      margin-top: 35px;
+    }
+
+    &__ads {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0px 2px 7px rgba(189,189,189,0.25);
+      padding: 35px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+}
+
+.filter {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 7px rgba(189,189,189,0.25);
+  padding: 35px;
+  width: 358px;
+  height: fit-content;
+  position:sticky;
+  top: 10px;
+
+  &__title {
+    display: block;
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom:6px;
+  }
+
+  &__count_ads {
+    display: block;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 16px;
+    color: #c9c9c9;
+  }
+
+  &__types { 
+    &__title {
+      display: block;
+      font-family: $font-1;
+      font-weight: 400;
+      font-size: 16px;
+      color: #333232;
+      margin-bottom: 10px;
+    }
+    &__block {
+      margin-top: 24px;
+    }
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 14px;
+    gap: 14px;
+  }
+
+
+  &__tag {
+    background-color: #E9F9FF;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    padding: 7px 10px;
+    width: fit-content;
+    gap: 8px;
+    cursor: pointer;
+    
+    &__name {
+      font-family: "Inter";
+      font-size: 16px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+}
+

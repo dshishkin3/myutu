@@ -1,0 +1,18 @@
+.container {
+  background: linear-gradient(90deg, #2ac6fa 0%, #0c8aff 100%);
+  display: flex;
+  justify-content: center;
+  min-height: 767px;
+  border-radius: 15px;
+}
+
+.content {
+  width: 439px;
+  position: absolute;
+}
+
+.window {
+  width: 100%;
+  border-radius: 15px;
+  margin-top: 175px;
+}

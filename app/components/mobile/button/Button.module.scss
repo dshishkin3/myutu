@@ -1,0 +1,49 @@
+@import "../../../assets/styles/variables";
+
+.btn {
+    height: 40px;
+    width: 100%;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: $main-blue;
+    font-family: $main-font;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    & span {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 130%;
+        color: $main-blue;
+    }
+
+    &:active {
+        opacity: 0.8;
+    }
+
+    &:disabled {
+        opacity: 0.5;
+    }
+}
+
+.exit {
+    color: #c9c9c9;
+    border-color: #c9c9c9;
+    & span {
+        color: #c9c9c9;
+    }
+}
+
+.filled {
+    // background-color: #2ac6fa;
+    & span {
+        color: white;
+    }
+    // не работает градиент хоть убейте
+    border: none;
+    background-image: linear-gradient(90deg, #2ac6fa 0%, #0c8aff 100%);
+}

@@ -1,0 +1,31 @@
+{
+  "categoryIcon": [
+    { "name": "Работа", "descr": "icons.category.category_work","icon": "https://storage.yandexcloud.net/myutu-icon/mobile/category_work.svg" },
+    { "name": "Одежда", "descr": "icons.category.category_wear","icon": "https://storage.yandexcloud.net/myutu-icon/mobile/category_wear.svg" },
+    { "name": "Инвестиции", "descr": "icons.category.category_invest","icon": "https://storage.yandexcloud.net/myutu-icon/mobile/category_invest.svg" },
+    { "name": "Электроника", "descr": "icons.category.category_electronic","icon": "https://storage.yandexcloud.net/myutu-icon/mobile/category_electronic.svg" },
+    { "name": "Товары для животных", "descr": "icons.category.category_animal","icon": "https://storage.yandexcloud.net/myutu-icon/mobile/category_animal.svg" },
+    { "name": "Аксессуары", "descr": "icons.category.category_accesories","icon": "https://storage.yandexcloud.net/myutu-icon/mobile/category_accesories.svg" },
+    { "name": "Обувь", "descr": "icons.category.category_shoes","icon": "https://storage.yandexcloud.net/myutu-icon/mobile/category_shoes.svg" },
+    { "name": "Косметика и Парфюмерия", "descr": "icons.category.category_cosmetics","icon": "https://storage.yandexcloud.net/myutu-icon/mobile/category_cosmetics.svg" },
+    { "name": "Товары для красоты", "descr": "icons.category.category_goodLike","icon": "https://storage.yandexcloud.net/myutu-icon/mobile/category_goodLike.svg" },
+    { "name": "Товары для здоровья", "descr": "icons.category.category_helth","icon": "https://storage.yandexcloud.net/myutu-icon/mobile/category_helth.svg" },
+    { "name": "Услуги", "descr": "icons.category.category_service","icon": "https://storage.yandexcloud.net/myutu-icon/mobile/category_service.svg" },
+    { "name": "Хобби и развлечение", "descr": "icons.category.category_hobby","icon": "https://storage.yandexcloud.net/myutu-icon/mobile/category_hobby.svg" },
+    { "name": "Товары для ремонта", "descr": "icons.category.category_repair","icon": "https://storage.yandexcloud.net/myutu-icon/mobile/category_repair.svg" },
+    { "name": "Мебель", "descr": "icons.category.category_furneture","icon": "https://storage.yandexcloud.net/myutu-icon/mobile/category_furneture.svg" },
+    { "name": "Посуда", "descr": "icons.category.category_posuda","icon": "https://storage.yandexcloud.net/myutu-icon/mobile/category_posuda.svg" },
+    { "name": "Текстиль для дома", "descr": "icons.category.category_tekstilhome","icon": "https://storage.yandexcloud.net/myutu-icon/mobile/category_tekstilhome.svg" },
+    { "name": "Декор интерьера", "descr": "icons.category.category_decor","icon": "https://storage.yandexcloud.net/myutu-icon/mobile/category_decor.svg" },
+    { "name": "Хозяйственные товары", "descr": "icons.category.category_hoztovar","icon": "https://storage.yandexcloud.net/myutu-icon/mobile/category_hoztovar.svg" },
+    { "name": "Бытовая техника", "descr": "icons.category.category_bitovayatechnika","icon": "https://storage.yandexcloud.net/myutu-icon/mobile/category_bitovayatechnika.svg" },
+    { "name": "Товары для ванной комнаты", "descr": "icons.category.category_goodwish","icon": "https://storage.yandexcloud.net/myutu-icon/mobile/category_goodwish.svg" },
+    { "name": "Торговое оборудование", "descr": "icons.category.category_torgovoeoborud","icon": "https://storage.yandexcloud.net/myutu-icon/mobile/category_torgovoeoborud.svg" },
+    { "name": "Промышленное оборудование", "descr": "icons.category.category_promoborud","icon": "https://storage.yandexcloud.net/myutu-icon/mobile/category_promoborud.svg" },
+    { "name": "Складское оборудование", "descr": "icons.category.category_warehouseoborud","icon": "https://storage.yandexcloud.net/myutu-icon/mobile/category_warehouseoborud.svg" },
+    { "name": "Продукты", "descr": "icons.category.category_eat","icon": "https://storage.yandexcloud.net/myutu-icon/mobile/category_eat.svg" },
+    { "name": "Детские товары", "descr": "icons.category.category_goodschildren","icon": "https://storage.yandexcloud.net/myutu-icon/mobile/category_goodschildren.svg" },
+    { "name": "Транспорт", "descr": "icons.category.category_cars","icon": "https://storage.yandexcloud.net/myutu-icon/mobile/category_cars.svg" },
+    { "name": "Недвижимость", "descr": "icons.category.category_real_estate","icon": "https://storage.yandexcloud.net/myutu-icon/mobile/category_real_estate.svg" }
+  ]
+}

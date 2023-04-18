@@ -1,0 +1,31 @@
+.upload_media {
+    margin-top: 26px;
+    display: grid;
+
+    &__drop_box {
+        border: 1px dashed #2ac6fa;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 14px;
+        span {
+            font-size: 14px;
+        }
+
+        button {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 18px;
+            text-align: center;
+            color: #333232;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .upload_media {
+        margin-top: 0px;
+    }
+}

@@ -1,0 +1,59 @@
+.about {
+  z-index: 1;
+  display: flex;
+
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  left: 37%;
+  bottom: -114px;
+  transform: translate(-50%, -50%);
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+
+  &__avatar {
+    display: flex;
+  }
+
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: space-between;
+
+    &_name {
+      color: #fff;
+      font-weight: 500;
+      font-size: 18;
+    }
+
+    &_subscribe {
+      background: linear-gradient(90deg, #2ac6fa 0%, #0c8aff 100%),
+        linear-gradient(
+          90deg,
+          rgba(42, 198, 250, 0.3) 0%,
+          rgba(12, 138, 255, 0.3) 100%
+        );
+      color: #fff;
+      font-weight: 500;
+      padding: 4px 6px;
+      font-size: 14px;
+      border-radius: 4px;
+    }
+  }
+}
+
+.desc {
+  margin-top: 12px;
+  color: #fff;
+
+  &__handler {
+    margin-top: 8px;
+    font-weight: 500;
+  }
+}

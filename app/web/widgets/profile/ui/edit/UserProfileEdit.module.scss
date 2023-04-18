@@ -1,0 +1,111 @@
+.edit {
+  background: #ffffff;
+  box-shadow: 0px 2px 7px rgb(189 189 189 / 25%);
+  border-radius: 10px;
+  padding: 88px 150px;
+
+  &__title {
+    font-size: 32px;
+    font-weight: 500;
+
+    &_trash {
+      cursor: pointer;
+      padding: 10px;
+      border: 1px solid #c9c9c9;
+      border-radius: 8px;
+      display: flex;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+  }
+}
+
+.form {
+  margin-top: 55px;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__input {
+    margin-bottom: 25px;
+    min-width: 388px;
+  }
+}
+
+.buttons {
+  display: flex;
+  margin-top: 25px;
+}
+
+.save {
+  background: linear-gradient(90deg, #2ac6fa 0%, #0c8aff 100%);
+  border-radius: 8px;
+  padding: 10px 48px;
+  font-weight: 500;
+  color: #fff;
+  margin-right: 25px;
+}
+
+.cancel {
+  background: none;
+  border-radius: 8px;
+  padding: 10px 60px;
+  font-weight: 500;
+  color: #c9c9c9;
+  border: 1px solid #c9c9c9;
+}
+
+.select {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 388px;
+}
+
+.react-select {
+  &__control {
+    border-radius: 0 !important;
+    border: none !important;
+    border-color: red;
+  }
+}
+
+.date {
+  display: flex;
+  min-width: 388px;
+}
+
+.menu_date {
+  display: flex;
+  align-items: center;
+  margin-left: -40px;
+  cursor: pointer;
+}
+
+@media (max-width: 1500px) {
+  .edit {
+    padding: 48px 75px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .edit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form {
+    display: block;
+  }
+
+  .select {
+    margin-bottom: 25px;
+  }
+}

@@ -1,0 +1,75 @@
+@import '../../../assets/styles/variables';
+
+.file {
+  @apply w-[200px]
+}
+
+.file > .input {
+  @apply absolute -z-[1] opacity-0;
+}
+
+.file > .span {
+  @apply flex flex-col items-center justify-center gap-[10px] w-[200px] h-[130px] flex-shrink-0 flex-grow-0;
+  border: 1px solid $form-gray;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.span {
+  position: relative;
+  margin-bottom: 7px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  color: $main-black;
+  cursor: pointer;
+}
+
+.span__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.35);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  color: #FFFFFF;
+  z-index: 10;
+
+  &:hover {
+    transition: 0.5s ease-in;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  }
+}
+
+.file__img {
+  border-radius: 5px;
+}
+.file__video {
+  width: 195px;
+  height: 100%;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .file {
+    @apply w-full;
+  }
+  .file > .span {
+    @apply w-full h-[200px];
+  }
+  .file__video {
+    width: auto;
+    height: 100%;
+  }
+}

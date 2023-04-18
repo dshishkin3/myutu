@@ -1,0 +1,46 @@
+.upload_media {
+    margin-top: 26px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+
+    &__section {
+        &__title {
+            display: block;
+            font-size: 18px;
+            color: #333232;
+            margin-bottom: 12px;
+        }
+    }
+
+    &__drop_box {
+        border: 1px dashed #2ac6fa;
+        height: 232px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        span:nth-child(2) {
+            font-size: 18px;
+            font-weight: 500;
+            color: #555555;
+            margin-top: 24px;
+        }
+        span:nth-child(3) {
+            font-size: 18px;
+            font-weight: 400;
+            color: #555555;
+            margin-top: 18px;
+        }
+        button {
+            background-color: #2ac6fa10;
+            padding: 12px 37px;
+            color: #2ac6fa;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 8px;
+        }
+    }
+}

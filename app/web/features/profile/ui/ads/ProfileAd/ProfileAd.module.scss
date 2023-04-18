@@ -1,0 +1,208 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  cursor: pointer;
+
+  &__favorites {
+    background: #fff;
+    width: max-content;
+    display: flex;
+    padding: 8px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 999;
+    margin: 12px;
+    margin-left: 220px;
+    cursor: pointer;
+  }
+}
+
+.info {
+  @apply flex flex-col;
+  flex: 1;
+  max-width: 266px;
+  gap: 3px;
+
+  &__name {
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 18px;
+    color: #555555;
+  }
+
+  &__additionally {
+    @apply gap-[10px];
+    color: #909090;
+    font-size: 16px;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+
+  &__typeAds {
+    margin-left: 10px;
+
+    &_buy {
+      background: #24dd7d;
+      border-radius: 3px;
+      color: #fff;
+      padding: 4px;
+    }
+
+    &_sale {
+      background: #05a2d6;
+      border-radius: 3px;
+      color: #fff;
+      padding: 4px;
+    }
+
+    &_process {
+      background: #e4e7fe;
+      border-radius: 3px;
+      color: #555555;
+      padding: 4px;
+    }
+
+    &_archive {
+      background: #555555;
+      border-radius: 3px;
+      color: #fff;
+      padding: 4px;
+    }
+
+    &_rejected {
+      background: #fd5839;
+      border-radius: 3px;
+      color: #fff;
+      padding: 4px;
+    }
+  }
+}
+
+.img {
+  @apply relative w-[266px] h-[180px] bg-[#e7e7e7] rounded-[5px] flex-shrink-0;
+  margin-bottom: 16px;
+
+  & span {
+    border-radius: 5px;
+  }
+}
+
+.target__status {
+  position: absolute;
+  width: 100%;
+  background-color: #6eb741;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 3px 0;
+  opacity: 0.8;
+}
+
+.card-buttons {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+.ad-actions {
+  display: flex;
+  align-items: center;
+  column-gap: 13px;
+  position: relative;
+
+  &__edit {
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #ededed;
+    width: 177px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  &__more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 600;
+    background-color: #ededed;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+    background-color: #fff;
+    padding: 14px;
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    bottom: 40px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    cursor: pointer;
+
+    & span {
+      font-size: 14px;
+      width: 100px;
+      cursor: pointer;
+    }
+    & span:hover {
+      background: #ededed;
+    }
+  }
+}
+
+.target__action {
+  width: 100%;
+  border: 1px solid #2ac6fa;
+  color: #2ac6fa;
+  border-radius: 5px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #2ac6fa;
+    color: #fff;
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    @apply flex-col;
+  }
+  .img {
+    @apply relative w-full h-[200px];
+  }
+}

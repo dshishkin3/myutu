@@ -1,0 +1,80 @@
+.buy {
+  background: #ffffff;
+  box-shadow: 0px 2px 7px rgba(189, 189, 189, 0.25);
+  padding: 24px 16px;
+
+  &__price {
+    display: flex;
+    align-items: center;
+
+    & p {
+      color: #555555;
+      font-weight: 600;
+      font-size: 22px;
+    }
+
+    & span {
+      color: #909090;
+      font-weight: 500;
+      font-size: 18px;
+      margin-left: 5px;
+    }
+  }
+
+  &__views {
+    color: #909090;
+    margin-top: 5px;
+  }
+
+  &__delivery {
+    color: #555555;
+    margin-top: 16px;
+
+    & span {
+      font-weight: 500;
+    }
+
+    &_info {
+      display: flex;
+      flex-direction: column;
+      margin-top: 16px;
+    }
+
+    &_infoImg {
+      display: flex;
+      align-items: start;
+      margin-top: 5px;
+      color: #c9c9c9;
+
+      & img {
+        margin-top: 3px !important;
+      }
+
+      & p {
+        margin-left: 5px;
+      }
+    }
+
+    &_infoPrice {
+      color: #555555;
+
+      & span {
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__buttons {
+    margin-top: 16px;
+
+    &_hidePhone {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & img {
+        padding-right: 8px !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+export const initialState: any = {
+    userId: '',
+    category: 0,
+    subcategory: 0,
+    video: '',
+    preview: '',
+    name: '',
+    tags: [],
+    price: 0,
+    units: 1,
+    description: "",
+    location: {
+      addressLine: '',
+    city: '',
+  longitude: 37.6156,
+  latitude: 55.7522,
+    },
+  costDelivery: 0,
+  deliveryType: "NONE",
+  typeAds: 'PRODUCT',
+};

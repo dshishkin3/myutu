@@ -1,0 +1,148 @@
+.modal {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+
+  &__active {
+    overflow: scroll;
+    transform: scale(1);
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 5%;
+    z-index: 2;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    gap: 20px 0;
+    justify-content: center;
+    border-radius: 10px;
+    text-align: start;
+    padding: 35px;
+    text-align: center;
+    max-width: 484px;
+
+    &_header {
+      display: flex;
+      justify-content: center;
+      &_close {
+        margin-left: 400px;
+        position: absolute;
+      }
+
+      & p {
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      & span {
+        cursor: pointer;
+      }
+    }
+    &_form {
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+
+      &_block {
+        display: flex;
+        gap: 20px;
+      }
+
+      &_input {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        & p {
+          position: absolute;
+          margin-left: 15px;
+          margin-top: 21px;
+          color: #c9c9c9;
+        }
+      }
+
+      &_inputImg {
+        display: flex;
+        position: absolute;
+        margin-left: 156px;
+        margin-top: -35px;
+      }
+
+      & label {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        & input {
+          margin-top: 10px;
+          padding-left: 38px;
+        }
+      }
+
+      &_commentSeller label {
+        display: flex;
+        flex-direction: row !important;
+
+        & span {
+          color: #2ac6fa;
+          margin-left: 5px;
+          cursor: pointer;
+        }
+      }
+      &_commentSellerText {
+        background: #f4f4f4;
+        border-radius: 8px;
+        padding: 13px;
+        text-align: -webkit-left;
+        margin-top: 3px;
+      }
+
+      &_comment {
+        & p {
+          color: #c9c9c9;
+          font-size: 14px;
+          text-align: -webkit-left;
+        }
+      }
+    }
+
+    &_button {
+      text-align: center;
+    }
+  }
+}
+
+.date {
+  display: flex;
+}
+.menu_date {
+  display: flex;
+  align-items: center;
+  margin-left: -40px;
+  cursor: pointer;
+}
+
+@media (max-width: 1500px) {
+  .modal {
+    &__active {
+      padding-top: 1.5%;
+      // align-items: center;
+    }
+  }
+}

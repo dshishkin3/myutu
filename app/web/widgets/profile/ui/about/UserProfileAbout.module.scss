@@ -1,0 +1,126 @@
+.about {
+  @apply w-full;
+  background: #fff;
+  border-radius: 10px;
+  padding: 88px 150px;
+  box-shadow: 0px 2px 7px rgba(189, 189, 189, 0.25);
+
+  &__description {
+    margin-top: 35px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333232;
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+
+  &__docs {
+    margin-top: 50px;
+    margin-bottom: 25px;
+
+    &_title {
+      display: flex;
+
+      & p {
+        font-size: 24px;
+        font-weight: 600;
+        color: #333232;
+        margin-right: 28px;
+      }
+    }
+
+    &_arrow {
+      display: flex;
+      cursor: pointer;
+
+      & img {
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+
+    &_items {
+      margin-top: 25px;
+    }
+    &_item {
+      display: flex;
+      margin-bottom: 10px;
+
+      & p {
+        font-weight: 500;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &__location {
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+
+    &_info {
+      display: flex;
+      margin-bottom: 10px;
+    }
+
+    & p {
+      color: #333232;
+      margin-left: 10px;
+    }
+  }
+
+  &__email {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+
+    & a {
+      display: flex;
+      align-items: center;
+    }
+
+    & p {
+      color: #333232;
+      margin-left: 10px;
+    }
+  }
+
+  &__tel {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 55px;
+
+    & a {
+      display: flex;
+      align-items: center;
+    }
+
+    & p {
+      color: #333232;
+      margin-left: 10px;
+    }
+  }
+
+  &__company {
+    &_info {
+      margin-top: 10px;
+    }
+
+    &_link {
+      cursor: pointer;
+      color: #2ac6fa;
+      border-bottom: 1px solid #2ac6fa;
+      width: max-content;
+      margin-top: 25px;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .about {
+    padding: 48px 75px;
+  }
+}

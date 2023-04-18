@@ -1,0 +1,9 @@
+.mobile {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    &__content {
+        height: calc(100vh - 82px);
+        // overflow: auto;
+    }
+}

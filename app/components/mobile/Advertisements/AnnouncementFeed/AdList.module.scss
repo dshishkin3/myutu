@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.gridItem {
+  width: calc(50% - 16px);
+}

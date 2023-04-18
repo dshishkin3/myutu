@@ -1,0 +1,39 @@
+@import "../../../../assets/styles/variables";
+
+.auth__btn {
+  height: 100%;
+  border: none;
+  border-radius: 5px;
+  background: $main-green;
+  padding: 0px 10px;
+  cursor: pointer;
+
+  & span {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    color: #ffffff;
+  }
+
+  &:hover {
+    background: $main-green-hover;
+    transition: 0.4s ease-in;
+  }
+
+  &:active {
+    background: $main-green-active;
+  }
+}
+
+.auth__profile {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+
+  & span {
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,19 @@
+@import '../../../assets/styles/variables';
+
+
+.label {
+  width: 260px;
+  flex-shrink: 0;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.02em;
+  color: $main-black;
+  cursor: pointer;
+
+  & span {
+    color: $main-red;
+  }
+}

@@ -1,0 +1,29 @@
+.category_section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  &__item {
+    display: flex;
+    box-shadow: 0px 0.814815px 2.85185px rgba(189, 189, 189, 0.25);
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    padding: 6px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:hover {
+      outline: rgb(42, 198, 250) solid 2px;
+      outline-offset: -2px;
+      transition: all 0.1s;
+    }
+
+    img {
+      width: 25px;
+    }
+    span {
+      display: block;
+    }
+  }
+}

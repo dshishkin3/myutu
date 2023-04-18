@@ -1,0 +1,193 @@
+@import "/app/assets/styles/variables";
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 30px;
+
+  & h2 {
+    padding: 0px;
+  }
+
+  &__svg {
+    width: 20px;
+    height: 20px;
+    margin-bottom: -4px;
+    cursor: pointer;
+  }
+
+  &__svg:hover svg path {
+    transition: 0.4s ease-in;
+    fill: $main-blue;
+  }
+}
+
+.form {
+  @apply w-[920px] flex flex-col gap-[25px];
+
+  &__container {
+    @apply flex items-start flex-wrap gap-[35px];
+  }
+
+  &__containerColumn {
+    @apply flex-grow flex flex-col;
+  }
+
+  &__containerRow {
+    @apply flex items-center flex-wrap gap-[11px];
+  }
+
+  &__descr {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 130%;
+    color: #797979;
+  }
+
+  &__select {
+    border: 1px solid $form-gray;
+    border-radius: 5px;
+    padding: 9px 14px;
+  }
+
+  &__inputSearch {
+    position: relative;
+    flex-grow: 1;
+  }
+
+  &__time {
+    @apply flex-grow grid grid-cols-5 gap-x-6 gap-y-[18px];
+    grid-auto-rows: minmax(40px, auto);
+  }
+
+  &__tags {
+    margin-top: -7px;
+    margin-bottom: 7px;
+    width: 100%;
+    height: 180px;
+    overflow-y: auto;
+    border: 1px solid $form-gray;
+    border-top: none;
+    border-radius: 0px 0px 5px 5px;
+    padding: 9px 14px;
+  }
+
+  &__tag {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: $main-black;
+    padding-bottom: 9px;
+    cursor: pointer;
+
+    &:hover {
+      transition: all 0.4s ease-in;
+      color: $main-blue;
+    }
+    &:last-child {
+      padding-bottom: 0px;
+    }
+  }
+
+  &__tagsAdded {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  &__tagAdded {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid $main-blue;
+    border-radius: 30px;
+    padding: 6px 15px;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    color: $main-blue;
+
+    & svg {
+      cursor: pointer;
+
+      &:hover path {
+        transition: 0.4s ease-in;
+        fill: $main-blue;
+      }
+    }
+  }
+
+  &__map {
+    width: 100%;
+    height: 295px;
+    margin-top: 16px;
+  }
+}
+
+.search__text,
+.reset__text {
+  position: absolute;
+  cursor: pointer;
+
+  &:hover path {
+    transition: 0.4s ease-in;
+    fill: $main-blue;
+  }
+}
+.search__text {
+  top: 10px;
+  left: 14px;
+}
+.reset__text {
+  top: 13px;
+  right: 14px;
+}
+
+@media (max-width: 991px) {
+  .form {
+    @apply w-full;
+  }
+}
+
+@media (max-width: 768px) {
+  .form {
+    &__container {
+      @apply flex-col gap-[10px];
+    }
+
+    &__containerColumn {
+      @apply flex-grow-0 w-full;
+    }
+
+    &__time {
+      @apply w-full;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .form__time {
+    @apply grid-cols-3;
+  }
+}
+
+@media (max-width: 768px) {
+  .form__select {
+    @apply w-full;
+  }
+}
+
+@media (max-width: 430px) {
+  .form__time {
+    @apply grid-cols-2;
+  }
+}

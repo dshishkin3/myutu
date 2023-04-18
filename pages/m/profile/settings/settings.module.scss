@@ -1,0 +1,30 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #f4f4f4;
+    flex-direction: column;
+    gap: 8px 0;
+}
+
+.content {
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 16px;
+    height: calc(100% - 371px);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    span {
+        max-width: 270px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #333232;
+    }
+}

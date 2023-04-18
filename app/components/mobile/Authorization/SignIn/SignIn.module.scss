@@ -1,0 +1,69 @@
+.signIn {
+    display: flex;
+    flex-direction: column;
+
+    span {
+        text-align: center;
+        color: red;
+    }
+
+    label {
+        position: relative;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: #333232;
+        display: flex;
+        flex-direction: column;
+        &:first-child {
+            margin-top: 0;
+        }
+        span {
+            display: flex;
+            justify-content: flex-start;
+            color: #fd5839;
+        }
+    }
+
+    input {
+        background: white;
+        border: 1px solid #c9c9c9;
+        border-radius: 8px;
+        margin-top: 4px;
+        padding-left: 10px;
+        height: 46px;
+        outline: none;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .eye {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 15px;
+        top: 35px;
+    }
+
+    &__btn {
+        width: 100%;
+        height: 44px;
+        color: white;
+        background: linear-gradient(90deg, #2ac6fa 0%, #0c8aff 100%);
+        border-radius: 8px;
+    }
+
+    .forgotPass {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        span {
+            color: #2ac6fa;
+        }
+    }
+}

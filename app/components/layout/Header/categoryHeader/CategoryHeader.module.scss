@@ -1,0 +1,33 @@
+@import "../../../../assets/styles/variables";
+
+.category__container {
+  position: relative;
+}
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px ;
+  border: none;
+  border-radius: 5px;
+  padding: 9.5px 10px;
+  background-color: $main-blue;
+  cursor: pointer;
+
+  & span {
+    font-family: $main-font;
+    font-size: 16px;
+    line-height: 130%;
+    font-weight: 600;
+    color: white;
+  }
+  
+  &:hover {
+    background: $main-blue-hover;
+    transition: 0.4s ease-in;
+  }
+
+  &:active {
+    background: $main-blue-active;
+  }
+}

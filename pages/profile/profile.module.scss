@@ -1,0 +1,28 @@
+.profile__content {
+  @apply grid gap-x-[24px] mt-[45px];
+  grid-template-columns: 248px auto;
+}
+
+.section__wrapper {
+  @apply flex flex-col;
+}
+
+@media (max-width: 768px) {
+  .profile__content {
+    @apply gap-x-[30px];
+  }
+}
+
+@media (max-width: 600px) {
+  .breadcrumbProfile {
+    @apply hidden;
+  }
+  .page__titleProfile {
+    display: none;
+  }
+
+  .profile__content {
+    @apply mt-[25px];
+    grid-template-columns: 1fr;
+  }
+}

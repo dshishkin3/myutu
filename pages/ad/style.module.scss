@@ -1,0 +1,226 @@
+.ad {
+  background: #ffffff;
+  padding: 46px 35px;
+
+  &__wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    z-index: 5;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &_title {
+      font-size: 32px;
+      font-weight: 500;
+    }
+
+    &_share {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      height: 44px;
+    }
+
+    &_shareImg {
+      position: relative;
+
+      display: flex;
+      gap: 20px;
+
+      & img {
+        border: 1px solid #2ac6fa !important;
+        padding: 9px !important;
+        border-radius: 8px !important;
+        cursor: pointer;
+      }
+    }
+
+    &_sharePopupOpen {
+      box-shadow: 0px 11px 22px 0px rgb(132 132 132 / 25%);
+      opacity: 1;
+      transition: all 0.3s;
+      position: relative;
+      display: flex;
+      align-items: center;
+      border-radius: 6px;
+      padding: 22px;
+      top: 7px;
+      z-index: 9999;
+      cursor: pointer;
+      background: #fff;
+
+      &::after {
+        content: "";
+        position: absolute;
+        transition: all 0.3s;
+        right: 5px;
+        top: -28px;
+        border: 10px solid transparent;
+        border-bottom: 18px solid #fff;
+      }
+
+      & p {
+        margin-left: 10px;
+      }
+    }
+
+    &_sharePopupClose {
+      box-shadow: 0px 11px 22px 0px rgb(132 132 132 / 25%);
+      opacity: 0;
+      transition: all 0.3s;
+      position: relative;
+      display: flex;
+      align-items: center;
+      border-radius: 6px;
+      padding: 25px;
+      top: 7px;
+      z-index: 9999;
+      cursor: pointer;
+
+      & p {
+        margin-left: 10px;
+      }
+    }
+
+    &_favorite {
+      display: flex;
+    }
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    &_actions {
+      width: 322px;
+    }
+  }
+}
+
+@import "app/assets/styles/_variables.scss";
+.add_ad {
+  &__title {
+    display: block;
+    font-family: $font-2;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 35px;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: 1fr 445px;
+    gap: 30px;
+  }
+
+  &__section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 35px;
+    box-shadow: 0px 2px 7px rgba(189, 189, 189, 0.25);
+    margin-bottom: 35px;
+
+    &__title {
+      display: block;
+      font-family: $font-1;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 18px;
+      color: #333232;
+      margin-bottom: 26px;
+    }
+  }
+
+  &__button_group {
+    display: flex;
+    width: 388px;
+    gap: 20px;
+  }
+
+  &__text {
+    &__error {
+      color: red;
+      font-size: 14px;
+      font-family: "Inter";
+    }
+    &__meta {
+      color: #c9c9c9;
+      font-weight: 400;
+      font-family: "Inter";
+      font-size: 16px;
+    }
+  }
+
+  &__tags {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  &__tag {
+    display: flex;
+    align-items: center;
+    background-color: #e9f9ff;
+    width: fit-content;
+    padding: 7px 10px;
+    border-radius: 100px;
+    gap: 8px;
+
+    img {
+      cursor: pointer;
+    }
+  }
+
+  &__wrapper_map {
+    width: 100%;
+    height: 419px;
+    border-radius: 10px;
+    margin-top: 12px;
+    margin-bottom: 26px;
+  }
+}
+
+.help_telegram {
+  &__title {
+    display: block;
+    font-family: $font-1;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: #555555;
+    margin-top: 24px;
+    margin-bottom: 10px;
+  }
+  &__description {
+    display: block;
+    font-family: $font-1;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #c9c9c9;
+    margin-bottom: 24px;
+  }
+  &__button {
+    font-family: $font-1;
+    background-color: #2ac6fa10;
+    padding: 12px 37px;
+    color: #2ac6fa;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+  }
+}

@@ -1,0 +1,130 @@
+$color: #2ac6fa;
+
+.myads {
+  @apply w-full;
+  background: linear-gradient(90deg, #2ac6fa 0%, #0c8aff 100%);
+  border-radius: 10px;
+  padding: 88px 150px;
+}
+
+.switch {
+  @apply flex items-center justify-start flex-shrink-0 rounded-[5px] mt-5 ml-[2px];
+
+  &__item {
+    @apply text-center cursor-pointer;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 35px 84px;
+    color: #fff;
+    max-width: 260px;
+    background: linear-gradient(90deg, #2ac6fa 0%, #0c8aff 100%);
+    border-radius: 10px;
+    margin-right: -11px;
+    width: 275px;
+    max-width: 271px;
+  }
+
+  &__item_product {
+    max-width: 271px;
+  }
+
+  &__item--active {
+    background: #fff;
+    color: #333232;
+    font-weight: 500;
+    z-index: 2;
+  }
+}
+
+.tabs {
+  @apply flex mt-[16px];
+  background: #fff;
+  border-radius: 10px;
+  display: inline-flex;
+  padding: 13px 25px;
+
+  &__item {
+    white-space: nowrap;
+    font-size: 16px;
+    color: #c9c9c9;
+    cursor: pointer;
+    padding-bottom: 10px;
+    font-weight: 500;
+    position: relative;
+    margin-right: 45px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__count {
+    margin-left: 5px;
+    color: #d2d2d2;
+  }
+
+  &__item--active:before {
+    position: absolute;
+    bottom: 0;
+    width: 33%;
+    border-top: 2px solid #2ac6fa;
+    content: "";
+    left: 30%;
+  }
+
+  &__item--active {
+    color: #2ac6fa;
+  }
+
+  &__count--active {
+    color: $color;
+  }
+}
+
+.ads__list {
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  flex-wrap: wrap;
+  grid-gap: 36px 16px;
+  margin-top: 32px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+
+  &_empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: -webkit-fill-available;
+    padding: 40px;
+
+    & p {
+      max-width: 300px;
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .ads__list {
+    justify-content: center;
+  }
+
+  .myads {
+    padding: 48px 75px;
+  }
+}
+
+@media (max-width: 900px) {
+  .tabs {
+    @apply overflow-x-scroll;
+  }
+}
+@media (max-width: 650px) {
+  .switch {
+    @apply w-[309px];
+  }
+}

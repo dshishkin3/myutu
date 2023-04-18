@@ -1,0 +1,31 @@
+@import "app/assets/styles/variables";
+
+.input {
+  &__time {
+    width: 100%;
+    border-radius: 5px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-right: 50px;
+    padding-left: 14px;
+    border: 1px solid #d2d2d2;
+    background: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #292929;
+
+    &:hover {
+      transition: 0.4s ease-in;
+      border: 1px solid $mid-gray;
+    }
+
+    &:focus,
+    &:focus-visible {
+      border: 1px solid $gray-text;
+      outline: none;
+      background: none;
+    }
+  }
+}

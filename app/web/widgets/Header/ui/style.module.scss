@@ -1,0 +1,51 @@
+@import "app/assets/styles/variables";
+
+.header {
+  width: 1450px;
+  margin: auto;
+  &__wrapper {
+    margin: auto;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 35px;
+    margin-top: 5px;
+    padding: 18px 44px;
+    background: #fff;
+    box-shadow: 0px 2px 7px rgb(189 189 189 / 25%);
+    border-radius: 10px;
+    z-index: 3;
+    position: relative;
+  }
+
+  &__right_section {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-grow: 1;
+  }
+
+  &__left_section {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    border-right: 2px solid rgba(42, 198, 250, 0.2);
+    padding-right: 10px;
+    cursor: pointer;
+  }
+
+  &__settings {
+    background: #ffffff;
+    border: 1px solid #2ac6fa;
+    box-shadow: 0px 0.814815px 2.85185px rgba(189, 189, 189, 0.25);
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+  }
+}

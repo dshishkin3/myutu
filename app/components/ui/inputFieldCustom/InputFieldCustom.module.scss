@@ -1,0 +1,65 @@
+@import '../../../assets/styles/variables';
+
+.input {
+  @apply w-full rounded-[5px] py-[9px] pr-[50px] pl-[14px];
+  border: 1px solid $form-gray;
+  background: none;
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $main-black;
+
+  &__error {
+    border-color: $main-red;
+  }
+
+  &__adSearch {
+    padding-left: 45px;
+  }
+
+  &::placeholder {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $form-gray;
+  }
+
+  &:hover {
+    transition: 0.4s ease-in;
+    border: 1px solid $mid-gray;
+  }
+
+  &:focus, &:focus-visible {
+    border: 1px solid $gray-text;
+    outline: none;
+    background: none;
+  }
+
+  &__error:focus, &__error:focus-visible {
+    border-color: $main-red;
+  }
+}
+
+
+.inputWidth {
+  width: auto;
+}
+.createAdInput,
+.input__adSearch {
+  margin-bottom: 7px;
+}
+
+.createAdTextarea {
+  resize: none;
+  height: 135px;
+  margin-bottom: 7px;
+}
+
+@media (max-width: 768px) {
+  .inputWidth {
+    width: 100%;
+  }
+}

@@ -1,0 +1,18 @@
+.mute {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 100px;
+  width: fit-content;
+  padding: 7px;
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  transition: all 0.3s;
+
+  &:hover {
+    transition: all 0.3s;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}

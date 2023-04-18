@@ -1,0 +1,116 @@
+.ads_home {
+  width: 100%;
+  &__title_block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 600;
+    font-family: "Nunito";
+  }
+
+  &__button {
+    padding: 10px 32px;
+    border-radius: 8px;
+    color: #fff;
+    background: linear-gradient(90deg, #2ac6fa 0%, #0c8aff 100%);
+  }
+
+  &__ads {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    background-color: #fff;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 7px rgba(189, 189, 189, 0.25);
+    width: 100%;
+    // height: 832px;
+    // overflow: auto;
+  }
+}
+
+.ad {
+  grid-column: span 1 / span 1;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+
+  &_item__favorites {
+    background: #fff;
+    width: max-content;
+    display: flex;
+    padding: 8px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 999;
+    margin: 12px;
+    margin-left: 219px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      filter: brightness(90%);
+      transition: all 0.3s;
+    }
+  }
+
+  &__image {
+    border-radius: 8px;
+  }
+  &__price {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    color: #555555;
+    margin-top: 16px;
+  }
+  &__name {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    margin-top: 6px;
+  }
+
+  &__address {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: #909090;
+    margin-top: 6px;
+    flex: 1;
+  }
+
+  &__bottom {
+    display: flex;
+    column-gap: 10px;
+    margin-top: 6px;
+  }
+
+  &__date {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    color: #909090;
+  }
+  &__status {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    padding: 0px 4px;
+    border-radius: 3px;
+
+    &__product {
+      background-color: #05a2d6;
+    }
+
+    &__request {
+      background-color: #24dd7d;
+    }
+  }
+}

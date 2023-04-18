@@ -1,0 +1,21 @@
+.button {
+    padding: 10px 32px;
+    border-radius: 8px;
+    width: 100%;
+
+    &__primary {
+        color: #fff;
+        background: linear-gradient(90deg, #2AC6FA 0%, #0C8AFF 100%);
+    }
+
+    &__secondary {
+        color: #c9c9c9;
+        border: 1px solid #c9c9c9;
+    }
+
+    &__danger {
+        border: 1px solid #FD5839;
+        color: #c9c9c9;
+    }
+    
+}

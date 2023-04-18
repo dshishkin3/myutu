@@ -1,0 +1,120 @@
+@import "../../../../../assets/styles/variables";
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  row-gap: 16px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px 0px;
+
+  &__item {
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    padding-left: 22px;
+    border-left: 3px solid #fff;
+    display: flex;
+    align-items: center;
+
+    & span {
+      margin-left: 13px;
+    }
+  }
+
+  &__version {
+    color: #c9c9c9;
+    padding-left: 25px;
+  }
+
+  &__item_icon {
+    margin-right: 13px;
+  }
+
+  &__item_logout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #c9c9c9;
+    border-radius: 8px;
+    padding: 6px 0px;
+    cursor: pointer;
+    margin-top: 24px;
+
+    & p {
+      color: #c9c9c9;
+      margin-left: 16px;
+    }
+  }
+
+  &__item--active {
+    color: #2ac6fa;
+    border-left: 3px solid #2ac6fa;
+  }
+}
+
+.sapphire {
+  font-weight: 600;
+}
+
+.mobileContainer {
+  @apply hidden relative items-center gap-4 pb-4;
+}
+
+.settingBtn {
+  @apply h-[30px] flex items-center justify-center flex-grow rounded-[3px];
+  border: 1px solid #b8b8b8;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 130%;
+  color: $mid-gray;
+}
+.toggleBtn {
+  @apply flex items-center justify-center w-[30px] h-[30px] rounded-[4px];
+  border: 1px solid $main-blue;
+
+  & svg {
+    transition: 0.3s ease-out;
+  }
+}
+.activeMenu {
+  transform: rotate(180deg);
+}
+
+.menuMobile {
+  @apply absolute top-[38px] right-0 bg-white mt-2 px-[15px] py-[10px] opacity-0 invisible z-50;
+  box-shadow: 0px 1px 6px rgba(197, 197, 197, 0.19);
+  transition: 0.3s ease-in;
+}
+.menuMobileShow {
+  @apply opacity-100 visible;
+}
+.menuMobile__item {
+  font-family: $main-font;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $main-black;
+  padding-bottom: 6px;
+
+  &:last-child {
+    padding-bottom: 0px;
+  }
+
+  &:hover {
+    color: $main-blue;
+    transition: 0.3s ease-in;
+  }
+}
+
+@media (max-width: 600px) {
+  .mobileContainer {
+    @apply flex;
+  }
+  .menu {
+    @apply hidden;
+  }
+}

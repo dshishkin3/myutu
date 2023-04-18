@@ -1,0 +1,36 @@
+@import "../../../../assets/styles/variables";
+
+.place {
+  height: 100%;
+  border: 1px solid $main-blue;
+  border-radius: 5px;
+  padding: 0px 10px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  & span {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    color: $main-blue;
+  }
+
+  &:hover {
+    background: $main-blue-hover;
+    transition: 0.4s ease-in;
+
+    & span {
+      transition: 0.4s ease-in;
+      color: #fff;
+    }
+  }
+
+  &:active {
+    background: $main-blue-active;
+  }
+}

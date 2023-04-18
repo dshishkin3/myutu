@@ -1,0 +1,47 @@
+.select {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+
+    &__label {
+        display: block;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: rgba(255, 255, 255, .4);
+        margin-bottom: 5px;
+    }
+
+    &__arrow {
+        position: absolute;
+        top: 35px;
+        right: 6px;
+    }
+
+    &_options {
+        max-height: 300px;
+        overflow-y: scroll;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        border-radius: 5px;
+        min-height: 0px;
+        background-color: #01A6DE;
+        border-radius: 8px;
+        padding: 10px 20px;
+        z-index: 999;
+
+        &__item {
+            display: block;
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            padding: 7px 0px;
+            cursor: pointer;
+            color: #fff;
+        }
+    }
+}

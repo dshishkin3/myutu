@@ -1,0 +1,34 @@
+.snackbar {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  bottom: -50px;
+  right: 25px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  background: #fff;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #fff;
+  transition: 0.3s ease-in;
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 23px;
+color: #000000;
+padding: 18px 24px;
+min-width: 462px;
+}
+
+.snackbar__show {
+  visibility: visible;
+  opacity: 1;
+  bottom: 25px;
+  border: 1.5px solid #24DD7D;
+}

@@ -1,0 +1,38 @@
+.text-field {
+    width: 100%;
+
+    &--label {
+        display: block;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #000;
+        margin-bottom: 5px;
+        position: relative;
+
+        &__required::after {
+            content: '*';
+            position: absolute;
+            top: 0;
+            color: #FD5839;
+        }
+    }
+
+    &--input {
+        position: relative;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        padding: 10px 12px;
+        border: 1px solid #C9C9C9;
+        border-radius: 8px;
+        width: 100%;
+        background-color: transparent;
+        color: #000;
+
+        &:focus {
+            outline: none;
+        }
+
+    }
+}

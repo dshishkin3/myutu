@@ -1,0 +1,46 @@
+.container {
+    padding: 16px;
+    background-color: #ffffff;
+    height: calc(100% - 8px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    margin-bottom: 16px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    cursor: pointer;
+
+    &:active {
+        opacity: 0.8;
+    }
+}
+
+.title {
+    flex: 1;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+}
+
+.version {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #c9c9c9;
+}

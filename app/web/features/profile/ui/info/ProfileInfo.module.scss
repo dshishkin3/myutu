@@ -1,0 +1,128 @@
+@import "../../../../../assets/styles/variables";
+
+.user {
+  background: #fff;
+  padding: 20px 10px;
+  box-shadow: 0px 2px 7px 0px #bdbdbd40;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &__reviews {
+    font-size: 16px;
+    margin-left: 10px;
+    color: #2ac6fa;
+  }
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  width: -webkit-fill-available;
+  justify-content: center;
+  position: relative;
+}
+
+.info {
+  width: -webkit-fill-available;
+}
+
+.img {
+  filter: brightness(65%);
+  object-fit: cover;
+}
+.img_upload {
+  position: absolute;
+  cursor: pointer;
+  width: -moz-fit-content;
+  margin-top: -44px;
+  margin-left: 104px;
+}
+
+.editProfile {
+  cursor: pointer;
+  position: absolute;
+  margin-top: -65px;
+  margin-left: 190px;
+  top: 60px;
+  right: 10px;
+}
+
+.login {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.rates {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.rates_number {
+  margin-right: 9px;
+}
+
+.subs {
+  @apply flex items-center cursor-pointer;
+
+  &__item {
+    @apply flex flex-col;
+
+    &:first-child {
+      margin-right: 28px;
+    }
+  }
+
+  &__count {
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+    font-family: $main-font;
+    margin-bottom: -7px;
+  }
+
+  &__text {
+    color: #000;
+    font-size: 16px;
+    font-family: $main-font;
+  }
+}
+
+.uploadInput {
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  right: -38px;
+  position: relative;
+  cursor: pointer;
+  z-index: -1;
+}
+
+@media (max-width: 600px) {
+  .user {
+    display: grid;
+    padding-bottom: 10px;
+    border-bottom: none;
+  }
+
+  .img {
+    grid-row: 1 / 3;
+  }
+
+  .rates {
+    grid-column: 2 / 3;
+  }
+
+  .subs {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .login {
+    margin-top: 0px;
+    grid-row: 3 / 4;
+  }
+}

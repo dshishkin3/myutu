@@ -1,0 +1,108 @@
+.modal {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  &__active {
+    transform: scale(1);
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    gap: 20px 0;
+    justify-content: center;
+    border-radius: 10px;
+    text-align: start;
+    padding: 35px;
+    text-align: center;
+    width: 561px;
+
+    &_header {
+      display: flex;
+      justify-content: space-between;
+
+      & p {
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      & span {
+        cursor: pointer;
+      }
+    }
+    &_user {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      font-size: 18px;
+      gap: 12px;
+
+      & img {
+        border-radius: 30px;
+      }
+    }
+    &_grade {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+
+      & span {
+        color: #909090;
+      }
+    }
+
+    &_reviewsTitle {
+      font-size: 20px;
+      font-weight: 500;
+      text-align: -webkit-left;
+    }
+
+    &_reviews {
+      display: flex;
+      align-items: self-start;
+      gap: 12px;
+
+      & img {
+        border-radius: 65px;
+      }
+    }
+
+    &_review {
+      display: flex;
+      flex-direction: column;
+      align-items: self-start;
+      text-align: -webkit-left;
+
+      &_name {
+        font-weight: 500;
+        color: #909090;
+      }
+      &_text {
+        max-width: 434px;
+      }
+      &_score {
+        margin-top: 10px;
+        display: flex;
+        color: #333232;
+        gap: 8px;
+      }
+    }
+  }
+}

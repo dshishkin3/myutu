@@ -1,0 +1,15 @@
+.header {
+    width: 100%;
+    background-color: white;
+    border-radius: 0px 0px 8px 8px;
+    &__content {
+        display: flex;
+        gap: 0 24px;
+        padding: 24px 16px 16px 16px;
+    }
+    span {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 130%;
+    }
+}

@@ -1,0 +1,55 @@
+@import "../../../assets/styles/variables";
+
+.card { 
+  // width: 245px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  filter: $shadow-card;
+
+  &__img { 
+    position: relative;
+    width: 100%;
+    height: 178px;
+  }
+
+  &__info {
+    padding: 10px 8px;
+  }
+  &__label {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: $main-black;
+    padding-bottom: 3px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+  }
+
+  &__address, &__time {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $gray-text;
+    padding-bottom: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__price {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: $main-black;
+  }
+}

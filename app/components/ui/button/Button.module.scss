@@ -1,0 +1,65 @@
+@import '../../../assets/styles/variables';
+
+.btn {
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background: $main-blue;
+  font-family: $main-font;
+  cursor: pointer;
+
+  & span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    color: #fff;
+  }
+
+  &__login {
+    min-width: 180px;
+    margin-bottom: 25px;
+  }
+
+  &__reg {
+    min-width: 235px;
+  }
+
+  &__recovery {
+    min-width: 185px;
+  }
+
+  &__ad {
+    min-width: 380px;
+  }
+
+  &__intervalModal {
+    min-width: 215px;
+  }
+
+  &:hover {
+    transition: 0.4s ease-in;
+    background: $main-blue-hover;
+  }
+
+  &:active {
+    background: $main-blue-active;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+.createAdBtn {
+  align-self: flex-start;
+  margin-left: 295px;
+  min-width: 220px;
+}
+
+@media (max-width: 768px) {
+  .createAdBtn {
+    align-self: center;
+    margin-left: 0;
+  }
+}
